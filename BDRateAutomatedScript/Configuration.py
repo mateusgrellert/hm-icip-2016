@@ -25,13 +25,14 @@ def buildTestSet(path):
 
 
 gopStructureList = ['encoder_lowdelay_main']
-sequenceList = [['BQSquare', 64],['BlowingBubbles', 64], \
-				['Traffic', 64],['PeopleOnStreet', 64], \
-				['BasketballDrive', 64],['ParkScene', 64], \
+sequenceList = [['BasketballPass', 64],['BlowingBubbles', 64], \
 				['RaceHorsesC', 64],['BQMall', 64], \
-				['ChinaSpeed', 64],['BasketballDrillText', 64], \
-				['Johnny', 64],  ['FourPeople',64]]
-#sequenceList = [['BQMall', 20]]
+				['Slideshow', 64],['BasketballDrillText', 64], \
+				['Johnny', 64],  ['FourPeople',64], \
+				['BasketballDrive', 64],['ParkScene', 64], \
+				['Traffic', 64],['PeopleOnStreet', 64]]
+
+#sequenceList = [['BQMall', 64]]
 qpList = ['22', '27', '32', '37']
 
 targetComplexityList = xrange(10,100,10)
@@ -69,7 +70,7 @@ else:
 hmOutputPath = './hmoutput'  #ESSA PASTA PRECISA EXISTIR! IDEALMENTE TUDO MINUSCULO NESSE NOME!
 
 
-pathToRefBin = '../bin/TAppEncoderStatic_original'
+pathToRefBin = '../bin/TAppEncoderStatic'
 optParamsRef = ''
 
 [testNameList, pathToTestBinList, optParamsTestList] = buildTestSet('Tests.inp')

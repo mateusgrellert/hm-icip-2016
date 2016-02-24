@@ -1,10 +1,33 @@
 #    FORMAT:  TEST_NAME PATH_TO_ REF TEST PARAMS (SEPARATED BY SPACES)
-TR-1_2 ../bin/TAppEncoderStatic_original --TestRect=2
-TR-1_4 ../bin/TAppEncoderStatic_original --TestRect=4
-TR-1_9 ../bin/TAppEncoderStatic_original --TestRect=9
-TR-1_16 ../bin/TAppEncoderStatic_original --TestRect=16
-TR-1_25 ../bin/TAppEncoderStatic_original --TestRect=25
-TR-1_36 ../bin/TAppEncoderStatic_original --TestRect=36
-TR-1_49 ../bin/TAppEncoderStatic_original --TestRect=49
-TR-1_64 ../bin/TAppEncoderStatic_original --TestRect=64
-
+TS10-1 ../bin/TAppEncoderStatic BipredSearchRange=2 QuadtreeTUMaxDepthInter=2
+#TS10-2 ../bin/TAppEncoderStatic BipredSearchRange=0 QuadtreeTUMaxDepthInter=2
+#TS10-3 ../bin/TAppEncoderStatic BipredSearchRange=2 QuadtreeTUMaxDepthInter=2 SearchRange=8
+#TS10-4 ../bin/TAppEncoderStatic QuadtreeTUMaxDepthInter=2 SearchRange=8
+#TS10-5 ../bin/TAppEncoderStatic BipredSearchRange=0 SearchRange=8
+TS20-1 ../bin/TAppEncoderStatic BipredSearchRange=0 QuadtreeTUMaxDepthInter=2 SearchRange=8
+#TS20-2 ../bin/TAppEncoderStatic QuadtreeTUMaxDepthInter=2 TestRect=3
+TS20-3 ../bin/TAppEncoderStatic BipredSearchRange=2 QuadtreeTUMaxDepthInter=2 TestRect=3
+TS30-1 ../bin/TAppEncoderStatic QuadtreeTUMaxDepthInter=2 TestRect=2
+TS30-2 ../bin/TAppEncoderStatic BipredSearchRange=2 QuadtreeTUMaxDepthInter=2 TestRect=2
+#TS40-1 ../bin/TAppEncoderStatic QuadtreeTUMaxDepthInter=2 TestRect=1
+TS40-2 ../bin/TAppEncoderStatic QuadtreeTUMaxDepthInter=2 SearchRange=8 TestRect=1
+TS40-3 ../bin/TAppEncoderStatic BipredSearchRange=2 QuadtreeTUMaxDepthInter=2 TestRect=1
+TS50-1 ../bin/TAppEncoderStatic QuadtreeTUMaxDepthInter=2 SearchRange=8 TestRect=1 refs=3
+TS50-2 ../bin/TAppEncoderStatic BipredSearchRange=2 QuadtreeTUMaxDepthInter=2 TestRect=1 refs=3
+#TS50-3 ../bin/TAppEncoderStatic QuadtreeTUMaxDepthInter=2 SearchRange=4 TestRect=1 refs=3
+TS50-4 ../bin/TAppEncoderStatic BipredSearchRange=2 QuadtreeTUMaxDepthInter=2 SearchRange=8 TestRect=1 refs=3
+TS60-1 ../bin/TAppEncoderStatic BipredSearchRange=0 QuadtreeTUMaxDepthInter=2 SearchRange=8 TestRect=1 refs=2
+TS60-2 ../bin/TAppEncoderStatic BipredSearchRange=2 QuadtreeTUMaxDepthInter=1 refs=1
+#TS60-3 ../bin/TAppEncoderStatic BipredSearchRange=2 QuadtreeTUMaxDepthInter=1 SearchRange=8 refs=1
+TS70-1 ../bin/TAppEncoderStatic AMP=0 BipredSearchRange=2 QuadtreeTUMaxDepthInter=1 TestRect=3 refs=1
+TS70-2 ../bin/TAppEncoderStatic AMP=0 BipredSearchRange=0 QuadtreeTUMaxDepthInter=1 TestRect=3 refs=1
+#TS70-3 ../bin/TAppEncoderStatic AMP=0 BipredSearchRange=0 QuadtreeTUMaxDepthInter=1 SearchRange=8 TestRect=3 refs=1
+TS70-4 ../bin/TAppEncoderStatic AMP=0 BipredSearchRange=2 QuadtreeTUMaxDepthInter=2 TestRect=1 refs=1
+TS80-1 ../bin/TAppEncoderStatic AMP=0 BipredSearchRange=0 FME=0 QuadtreeTUMaxDepthInter=1 SearchRange=8 TestRect=1 refs=3
+#TS80-2 ../bin/TAppEncoderStatic AMP=0 BipredSearchRange=0 FME=0 QuadtreeTUMaxDepthInter=1 SearchRange=4 TestRect=1 refs=3
+TS80-3 ../bin/TAppEncoderStatic AMP=0 BipredSearchRange=0 FME=1 MaxPartitionDepth=3 QuadtreeTUMaxDepthInter=1 SearchRange=1 TestRect=0 refs=1
+TS80-4 ../bin/TAppEncoderStatic AMP=0 BipredSearchRange=0 FME=1 HadamardME=0 MaxPartitionDepth=3 QuadtreeTUMaxDepthInter=1 SearchRange=1 TestRect=0 refs=1
+#TS80-5 ../bin/TAppEncoderStatic AMP=0 BipredSearchRange=0 FME=1 HadamardME=0 QuadtreeTUMaxDepthInter=1 RDOQ=0 SearchRange=0 TestRect=0 refs=1
+TS90-1 ../bin/TAppEncoderStatic AMP=0 BipredSearchRange=0 FME=1 MaxPartitionDepth=3 QuadtreeTUMaxDepthInter=1 RDOQ=0 SearchRange=1 TestRect=0 refs=1
+TS90-2 ../bin/TAppEncoderStatic AMP=0 BipredSearchRange=0 FME=1 HadamardME=0 MaxPartitionDepth=3 QuadtreeTUMaxDepthInter=1 RDOQ=0 SearchRange=1 TestRect=0 refs=1
+#TS90-3 ../bin/TAppEncoderStatic AMP=0 BipredSearchRange=0 FME=1 HadamardME=0 MaxPartitionDepth=3 QuadtreeTUMaxDepthInter=1 RDOQ=0 SearchRange=0 TestRect=0 refs=1
